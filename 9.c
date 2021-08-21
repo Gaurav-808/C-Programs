@@ -1,0 +1,20 @@
+//Program to print an array using macro
+#include<stdio.h>
+#define ARRAY(a,y) printf("The Elements of array are : ");\
+                    for(i=0;i<y;i++)\
+                    {\
+                     printf("%d ",a);\
+                    }
+int main()
+{
+    int i,arraysize;
+    printf("Enter the number of elements of an array : ");
+    scanf("%d",&arraysize);
+    int array[arraysize];
+    printf("Enter the element of array\n");
+    for(i=0;i<arraysize;i++)
+    {
+        scanf("%d",&array[i]);
+    } 
+     ARRAY(array[i],arraysize);
+}
